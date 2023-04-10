@@ -4,6 +4,6 @@
 [Lista03](/Turing_Machine_03/03%20Maszyny%20Turinga.pdf)
 [Lista04](/Computational_Complexity_04/04%20Z%C5%82o%C5%BCono%C5%9B%C4%87%20obliczeniowa.pdf)
 [Lista05](Recursive_Algorithms_05/05%20Algorytmy%20rekurencyjne.pdf)
-[Lista6](/lista6/L6.pdf)
+[Lista06](/Number-Theoretic_Algorithms_06/06%20Algorytmy%20teorioliczbowe.pdf)
 
 
