@@ -1,0 +1,32 @@
+import networkx as nx
+import matplotlib.pyplot as plt
+import numpy as np
+
+G = nx.Graph() #tworze pusty graf
+VV = [1, 2, 3, 4, 5] #definuje wierzcholki grafu
+WW = [(1, 2), (2, 3), (3, 4), (4, 5), (1, 3), (3, 5)] #połaczenia - krawedzie grafu
+Vx = {1:0, 2:1, 3:2, 4:3, 5:4} #wierzcholek:wspolrzednax
+Vy = {1:0, 2:1, 3:0, 4:-1, 5:0} #wierzcholek:wspolrzednay
+
+g = nx.Graph() #tworze pusty graf
+
+gpos = {}
+for v in VV:
+    g.add_node(v)
+    gpos[v] = [Vx[v], Vy[v]]
+
+#Dla każdego v tworzony jest wierzchołek w grafie g z współrzędnymi z gpos
+
+for v1 in VV:
+    for v2 in VV:
+        if (v1, v2) in WW: #dla kazdej pary wierzcholkow z VV czy (v1,v2) znajduje sie w WW
+            weight = str(np.sqrt((Vx[v1] - Vx[v2])**2 + (Vy[v1] - Vy[v2])**2))
+            #odleglosc punktow od siebie => koszt przejscia miedzy wierzhcolkami
+            g.add_weighted_edges_from([(v1, v2, weight)]) #dodac etykiete na krawedzie pomiedzy v1 v2
+
+nx.draw(g, gpos, with_labels=True, node_color='yellow') #rysuje graf
+#with_labels=True z etykietami wierzcholkow
+#node_color='yellow' kolor bazowo niebieski
+labels = nx.get_edge_attributes(g, 'weight')
+nx.draw_networkx_edge_labels(g, gpos, edge_labels=labels)
+plt.show()
