@@ -6,4 +6,5 @@
 [Lista05](Recursive_Algorithms_05/05%20Algorytmy%20rekurencyjne.pdf)
 [Lista06](/Number-Theoretic_Algorithms_06/06%20Algorytmy%20teorioliczbowe.pdf)
 [Lista07](/Fast%20Fourier%20Transform%2007/07%20FFT.pdf)
-
+[Lista08](/Search_and_hash_functions_08/08%20Wyszukiwanie%20i%20funkcje%20haszujące.pdf)
+[Lista09](/Sorting_Algorithms_09/09%20Algorytmy%20sortowania.pdf)
