@@ -8,3 +8,4 @@
 [Lista07](/Fast%20Fourier%20Transform%2007/07%20FFT.pdf)
 [Lista08](/Search_and_hash_functions_08/08%20Wyszukiwanie%20i%20funkcje%20haszujące.pdf)
 [Lista09](/Sorting_Algorithms_09/09%20Algorytmy%20sortowania.pdf)
+[Lista10](/Data_Structures_10/10%20Stosy,%20kolejki,%20listy,%20grafy%20i%20zbiory%20rozłączne.pdf)
