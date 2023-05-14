@@ -1,0 +1,62 @@
+[
+    {
+        "typ": "AFV",
+        "cena": 2756.17,
+        "zasieg": 53,
+        "kamera": 0
+    },
+    {
+        "typ": "AUV",
+        "cena": 2255.45,
+        "zasieg": 14,
+        "kamera": 1
+    },
+    {
+        "typ": "AFV",
+        "cena": 8755.92,
+        "zasieg": 35,
+        "kamera": 1
+    },
+    {
+        "typ": "AUV",
+        "cena": 5231.1,
+        "zasieg": 22,
+        "kamera": 1
+    },
+    {
+        "typ": "AGV",
+        "cena": 5703.08,
+        "zasieg": 96,
+        "kamera": 0
+    },
+    {
+        "typ": "ASV",
+        "cena": 4783.34,
+        "zasieg": 78,
+        "kamera": 1
+    },
+    {
+        "typ": "AFV",
+        "cena": 2599.64,
+        "zasieg": 98,
+        "kamera": 0
+    },
+    {
+        "typ": "AFV",
+        "cena": 6557.33,
+        "zasieg": 99,
+        "kamera": 0
+    },
+    {
+        "typ": "AUV",
+        "cena": 2405.48,
+        "zasieg": 7,
+        "kamera": 1
+    },
+    {
+        "typ": "AUV",
+        "cena": 9571.74,
+        "zasieg": 48,
+        "kamera": 0
+    }
+]
