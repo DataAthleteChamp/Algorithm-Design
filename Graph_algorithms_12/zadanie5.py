@@ -87,3 +87,26 @@ else:
     print("max Flow value:", max_flow_value)
 
 plt.show()
+
+"""
+BFS
+Algorytm zaczyna od wybranego wierzchołka (lub korzenia w przypadku drzewa), 
+odwiedza wszystkie jego sąsiednie wierzchołki na tym samym poziomie, 
+a następnie przechodzi do następnego poziomu i odwiedza wszystkie wierzchołki na tym poziomie, i tak dalej.
+
+
+Algorytm Edmondsa-Karpa szukania maksymalnego przepływu w sieci przepływowej. 
+
+Kroki algorytmu:
+1. Inicjalizacja: Zainicjuj wszystkie przepływy na krawędziach na 0.
+
+2. Ścieżka powiększająca: Użyj przeszukiwania BFS do znalezienia najkrótszej ścieżki 
+(w sensie liczby krawędzi) od źródła (s) do ujścia (t) w residuum sieci. 
+Krawędzie przekierowane są traktowane jak krawędzie wsteczne. Jest to ścieżka powiększająca.
+
+3. Zwiększenie przepływu: Znajdź minimalną przepustowość na ścieżce powiększającej (min-c) 
+(to jest najmniejsza wartość na ścieżce powiększającej). 
+Zwiększ przepływ na każdej krawędzi ścieżki powiększającej o min-c, a przepływ na krawędziach wstecznych zmniejsz o min-c.
+
+4. Powtarzaj kroki 2-3, aż nie można znaleźć żadnej ścieżki powiększającej.
+"""
