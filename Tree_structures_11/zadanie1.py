@@ -104,40 +104,50 @@ class BinaryTree:
 
 def main():
     tree = BinaryTree()
+
+    # Initialize tree
+    tree.add_node('A')  # Root node
+    tree.add_node('B', 'A')
+    tree.add_node('C', 'A')
+    tree.add_node('D', 'B')
+    tree.add_node('E', 'B')
+    tree.add_node('F', 'C')
+    tree.add_node('G', 'C')
+
     while True:
-        print("1. Dodaj wierzchołek")
-        print("2. Usuń wierzchołek")
-        print("3. Wyświetl drzewo")
-        print("4. Zapisz drzewo do pliku")
-        print("5. Wczytaj drzewo z pliku")
-        print("6. Wyjdź")
-        choice = input("Wybierz opcję: ")
+        print("1. Add node")
+        print("2. Delete node")
+        print("3. Display tree")
+        print("4. Save tree to file")
+        print("5. Load tree from file")
+        print("6. Exit")
+        choice = input("Choose an option: ")
 
         if choice == '1':
-            key = input("Podaj klucz wierzchołka: ")
-            parent_key = input("Podaj klucz wierzchołka rodzica (jeśli brak, zostanie dodany do korzenia): ")
+            key = input("Enter node key: ")
+            parent_key = input("Enter parent node key (if none, it will be added as root): ")
             tree.add_node(key, parent_key)
 
         elif choice == '2':
-            key = input("Podaj klucz wierzchołka do usunięcia: ")
+            key = input("Enter key of the node to delete: ")
             tree.delete_node(key)
 
         elif choice == '3':
             tree.show_tree()
 
         elif choice == '4':
-            filename = input("Podaj nazwę pliku do zapisu: ")
+            filename = 'drzewo.json'
             tree.save_tree(filename)
 
         elif choice == '5':
-            filename = input("Podaj nazwę pliku do wczytania: ")
+            filename = 'drzewo.json'
             tree.load_tree(filename)
 
         elif choice == '6':
             break
 
         else:
-            print("Nieprawidłowa opcja. Spróbuj ponownie.")
+            print("Invalid option. Try again.")
 
 
 if __name__ == "__main__":
